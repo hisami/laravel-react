@@ -11,11 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::post('/posts', 'PostController@store')->name('admin.article.store');
+Route::post('/posts', 'PostController@store');
 
 Route::get('/{any?}', function () {
     return view('welcome');
